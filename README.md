@@ -16,6 +16,12 @@ To get started with this project, follow these steps:
 2. Install the necessary dependencies.
 3. Run the project.
 
+### Features
+
+- Discover our Attendance Module, a user-friendly tool that simplifies attendance tracking for organizations.
+- Effortlessly record and monitor attendance with our user-friendly Attendance Module.
+- Our Attendance Module streamlines attendance management, making it easier for organizations.
+
 ### Pages and Components
 - Auth pages.
 - Profile pages.
@@ -25,9 +31,3 @@ To get started with this project, follow these steps:
 ### Utils
 - Helper section.
 - Loader section.
-
-### Features
-
-- Discover our Attendance Module, a user-friendly tool that simplifies attendance tracking for organizations.
-- Effortlessly record and monitor attendance with our user-friendly Attendance Module.
-- Our Attendance Module streamlines attendance management, making it easier for organizations.
