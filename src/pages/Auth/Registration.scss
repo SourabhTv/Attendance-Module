@@ -1,0 +1,128 @@
+.registerEmploye {
+  width: fit-content;
+}
+.registrationSection {
+  font-family: serif;
+  .registerForm {
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    .registrationDiv {
+      padding: 40px 25px;
+      width: 100%;
+      .fields {
+        padding: 5px;
+        width: 100%;
+        label {
+          margin-bottom: 7px;
+        }
+        .tveDiv {
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+            margin-right: 10px;
+          }
+        }
+        input {
+          border: 1px solid #68fff1;
+          box-shadow: rgba(0, 229, 255, 0.35) 0px 2px 15px;
+          padding: 5px;
+          width: 100%;
+        }
+      }
+    }
+
+    .registerBtnSec {
+      margin-left: 32px !important;
+    }
+    .employeBtn {
+      width: fit-content;
+      margin: 12px 8px;
+      padding: 5px;
+      box-shadow: rgba(0, 229, 255, 0.35) 0px 5px 15px;
+      button.LogBtn {
+        position: relative;
+        display: inline-block;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 5px 25px;
+        border: 1px solid white;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+      }
+      .LogBtn::after,
+      .LogBtn::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: 0.5s;
+      }
+
+      .LogBtn::after {
+        top: -9px;
+        left: -9px;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+      }
+
+      .LogBtn::before {
+        bottom: -9px;
+        right: -9px;
+        border-bottom: 3px solid transparent;
+        border-right: 3px solid transparent;
+      }
+
+      .LogBtn:hover {
+        color: rgb(0, 91, 91);
+      }
+
+      .LogBtn:hover::after,
+      .LogBtn:hover::before {
+        width: 30px;
+        height: 30px;
+        border-color: cyan;
+      }
+    }
+  }
+}
+
+.errorMsgs {
+  color: red;
+}
+
+@media (max-width: 992px) {
+  .registrationSection {
+    .registerForm {
+      width: 100%;
+      margin-top: 25px;
+      .registrationDiv {
+        flex-direction: column;
+        padding-top: 0;
+      }
+      .registrationDiv:first-child {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 1100px) {
+  .registrationSection {
+    .registerForm {
+      .registrationDiv {
+        padding: 15px 25px;
+      }
+      .employeBtn {
+        margin: 6px 8px;
+      }
+    }
+  }
+}
